@@ -158,7 +158,7 @@ func (au authenticated_user) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func auth(email string, password string) (authenticated_user, error) {
 
-	if email == "iustincazan@yahoo.com" && password == "correctpassword" {
+	if email == "jdoe@mail.com" && password == "correctpassword" {
 		return authenticated_user{Name: "Iustin"}, nil
 	}
 	return authenticated_user{}, errors.New("No match found!")
